@@ -1,0 +1,25 @@
+{
+    "name": "trabalho/laboratorio-agua",
+    "description": "Laboratorio digital de qualidade da agua com simulacao de biofiltro - ODS 6",
+    "type": "project",
+    "require": {
+        "php": ">=8.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^11.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Lab\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Testes\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit --testdox --colors=always",
+        "coverage": "phpunit --coverage-text"
+    }
+}
